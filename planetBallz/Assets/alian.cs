@@ -23,7 +23,6 @@ public class alian : MonoBehaviour
         
         gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
-    
         if (Input.GetMouseButton(0)) {
   	        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
    	        RaycastHit hit;
@@ -35,7 +34,7 @@ public class alian : MonoBehaviour
 
             }
         }
-    
+       
     }
 
     public void setNext(GameObject next_point){
@@ -55,7 +54,7 @@ public class alian : MonoBehaviour
 
     }
 
-    public void kill_ball(GameObject g){
+      public void kill_ball(GameObject g){
         if (g.name.Substring(0,5) == "alian"){
             Destroy(g);
         }

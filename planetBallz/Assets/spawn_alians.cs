@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class spawn_alians : MonoBehaviour
 {
     int timer = 0;
