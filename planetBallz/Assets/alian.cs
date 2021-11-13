@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class alian : MonoBehaviour
 {
@@ -22,6 +23,19 @@ public class alian : MonoBehaviour
         
         gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
+    
+        if (Input.GetMouseButton(0)) {
+  	        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+   	        RaycastHit hit;
+   	        // Casts the ray and get the first game object hit
+   	        Physics.Raycast(ray, out hit);
+            try {
+   	            kill_ball(hit.collider.gameObject);
+            } catch (NullReferenceException e) {
+
+            }
+        }
+    
     }
 
     public void setNext(GameObject next_point){
@@ -39,5 +53,11 @@ public class alian : MonoBehaviour
             distY = distY/distance;
             distZ = distZ/distance;
 
+    }
+
+    public void kill_ball(GameObject g){
+        if (g.name.Substring(0,5) == "alian"){
+            Destroy(g);
+        }
     }
 }
