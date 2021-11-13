@@ -15,4 +15,14 @@ public class Point_Script : MonoBehaviour
     public Point_Script getNext (){
         return next;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log (other.gameObject.name.Substring(0,5));
+        if (other.gameObject.name.Substring(0,5) == "alian"){
+            alian other_other = other.gameObject.GetComponent<alian>();
+
+            other_other.setNext(getNext().gameObject);
+        }
+    }
 }

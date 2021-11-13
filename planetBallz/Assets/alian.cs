@@ -11,20 +11,9 @@ public class alian : MonoBehaviour
    float distY;
    float distZ;
 
-    float speed = .01F;
+   float speed = .01F;
 
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("eme");
-        if (collision.gameObject.Equals(next)){
-
-            Point_Script old = collision.gameObject.GetComponent<Point_Script>();
-
-            next = old.getNext().gameObject;
-           
-            setNext(next);
-            }    
-    }
+    
 
 
     // Update is called once per frame
@@ -41,7 +30,7 @@ public class alian : MonoBehaviour
             next = next_point;
 
             distX = next.transform.position.x - gameObject.transform.position.x;
-            distY =next.transform.position.y - gameObject.transform.position.y;
+            distY = next.transform.position.y - gameObject.transform.position.y;
             distZ = next.transform.position.z - gameObject.transform.position.z;
             
             float distance = Vector3.Distance(transform.position, next.transform.position);
@@ -49,5 +38,6 @@ public class alian : MonoBehaviour
             distX = distX/distance;
             distY = distY/distance;
             distZ = distZ/distance;
+
     }
 }
