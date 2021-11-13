@@ -15,9 +15,10 @@ public class spawn_alians : MonoBehaviour
         timer = timer + 1;
         if (timer > 60){
             timer = 0;
-            Instantiate(type, this.transform.position, Quaternion.identity);
+            type = Instantiate(type, this.transform.position, Quaternion.identity);
             alian new_alian = type.GetComponent<alian>();
             new_alian.setNext(first);
+           
          }
         
     }
