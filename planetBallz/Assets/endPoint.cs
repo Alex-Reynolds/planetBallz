@@ -9,7 +9,7 @@ public class endPoint : Point_Script
 
     void OnTriggerEnter(Collider other)
     {
-   //     try {
+        
         if (other.gameObject.name.Substring(0,5) == "alian" || other.gameObject.name.Substring(0,6) == "pireta"){
 
             alian other_other = other.gameObject.GetComponent<alian>();
@@ -24,8 +24,5 @@ public class endPoint : Point_Script
              }
             
         }
-        // } catch (){
-
-        // }
     }
 }
