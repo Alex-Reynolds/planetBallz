@@ -205,6 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7355468320023954659, guid: beaa370f0fe414740a18f93144fa3de9, type: 3}
+    - {fileID: 3993694218874749526, guid: beaa370f0fe414740a18f93144fa3de9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: beaa370f0fe414740a18f93144fa3de9, type: 3}
 --- !u!1 &146744918 stripped
 GameObject:
@@ -629,5 +630,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8c128f6c07ba3a46aadff94275f5b48, type: 3}
