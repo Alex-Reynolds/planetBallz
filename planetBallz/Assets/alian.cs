@@ -38,7 +38,9 @@ public class alian : MonoBehaviour
             this.setNext(next);
              gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
         ballCreature.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed));
-
+        Quaternion q = Quaternion.LookRotation (new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y - 1, gameObject.transform.position.z), Vector3.up);
+        q *= Quaternion.Euler (90, 0, 0);
+        ballCreature.transform.rotation = q;
         } catch (UnassignedReferenceException e){
 
         }
