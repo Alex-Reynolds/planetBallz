@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class endPoint : Point_Script
 {   
@@ -14,7 +15,9 @@ public class endPoint : Point_Script
             
              lives = lives - 1;
 
-           //  m_MyText.text = "lives left: " + lives; 
+            if (lives == 0){
+              SceneManager.LoadScene(1);
+            }
 
              if (other_other.next.Equals(gameObject)){
                 Destroy(other.gameObject);     
