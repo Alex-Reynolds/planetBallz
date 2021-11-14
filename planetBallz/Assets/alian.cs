@@ -18,7 +18,7 @@ public class alian : MonoBehaviour
     
     void OnCollisionEnter (Collision collision) {
  
-    if (collision.gameObject.name.Substring(0,5) == "alian") {
+    if (collision.gameObject.name.Substring(0,5) == "alian" || collision.gameObject.name.Substring(0,6) == "pireta") {
     Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
         }
  
