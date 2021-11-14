@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class timer_script : MonoBehaviour
+public class timer : MonoBehaviour
 {
 
   
@@ -25,16 +25,6 @@ public class timer_script : MonoBehaviour
         if (dt.Second == endTime) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-
-
-        if (dt.Second > endTime){
-           Text t = gameObject.GetComponent<Text>(); 
-           t.text = "OBJECTIVE SURVIVE for " + (dt.Second - endTime) + " more seconds";
-        } else {
-            Text t = gameObject.GetComponent<Text>();
-            t.text = "OBJECTIVE SURVIVE for " + ((endTime + 59) - dt.Second) + " more seconds";
-        }
-        
 
     }
 }
