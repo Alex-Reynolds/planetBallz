@@ -20,4 +20,10 @@ public class MenuButtons : MonoBehaviour
         Debug.Log("QUIT");
         Application.Quit();
     }
+
+    public void RestartGame()
+    {
+        // Go back to first level (Scene 2)
+        SceneManager.LoadScene(2);
+    }
 }
