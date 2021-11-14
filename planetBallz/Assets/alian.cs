@@ -13,14 +13,21 @@ public class alian : MonoBehaviour
    float distZ;
 
    float speed = .01F;
-
     
-
+    void OnCollisionEnter (Collision collision) {
+ 
+    if (collision.gameObject.name.Substring(0,5) == "alian") {
+    Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
+        }
+ 
+    }
 
     // Update is called once per frame
     void Update()
     {
         
+        this.setNext(next);
+
         gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
         if (Input.GetMouseButton(0)) {

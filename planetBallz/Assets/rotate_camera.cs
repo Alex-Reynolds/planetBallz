@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class rotate_camera : MonoBehaviour
 {
-    float smooth = 5.0f;
 
     double distX;
     double distY;
