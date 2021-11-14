@@ -474,7 +474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598700160
 GameObject:
@@ -1235,6 +1235,81 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0f1d57407e8e7ca41bb6788a9370e947, type: 3}
     volume: 0.5
     pitch: 1
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: PirateSpawn3
+    clip: {fileID: 8300000, guid: 0fe5ea44986897e4c96c8d20a781e24c, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: PirateSpawn4
+    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
+    source: {fileID: 0}
+  - name: GeneralDeathSound
+    clip: {fileID: 8300000, guid: 80461a2584e92fc47aa65a7098362f82, type: 3}
+    volume: 1
+    pitch: 3
     source: {fileID: 0}
 --- !u!1001 &1241426334
 PrefabInstance:
@@ -2159,9 +2234,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5b260a69688ff1541b5b22cc8b0a5797, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.52
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

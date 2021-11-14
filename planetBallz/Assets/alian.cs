@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Random = System.Random;
 
 public class alian : MonoBehaviour
 {
@@ -73,6 +74,26 @@ public class alian : MonoBehaviour
       public void kill_ball(GameObject g){
         if (g.name.Substring(0,5) == "alian" || g.name.Substring(0,6) == "pireta"){
             Destroy(g);
+            if (g.name.Substring(0, 5) == "alian")
+            {
+                System.Random rand = new Random();
+                double randValue = rand.NextDouble();
+
+                FindObjectOfType<AudioManager>().Play("GeneralDeathSound");
+                if (randValue < 0.01)
+                {
+                    FindObjectOfType<AudioManager>().Play("PirateDeathRare");
+                }
+                else if (randValue < 0.15)
+                {
+                    FindObjectOfType<AudioManager>().Play("PirateDeath1");
+                }
+                else if (randValue < 0.3)
+                {
+                    FindObjectOfType<AudioManager>().Play("PirateDeath2");
+                }
+            }
+
         }
     }
 }
