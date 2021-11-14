@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/cutscene2.unity
     guid: a722543d04206f94e9c5c1f8b8f272f9
   - enabled: 1
+    path: Assets/Scenes/tutorial.unity
+    guid: 7de26716963b32a4c9a4beaf80f88ea9
+  - enabled: 1
     path: Assets/Scenes/cowboy.unity
     guid: 3124c4e61d85e0340a6934bf82cf2eee
   - enabled: 1
