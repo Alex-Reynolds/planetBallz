@@ -17,7 +17,7 @@ public class endPoint : Point_Script
              lives = lives - 1;
 
             if (lives == 0){
-              SceneManager.LoadScene(1);
+              SceneManager.LoadScene(2);
             }
                 Destroy(other.gameObject);     
              }
