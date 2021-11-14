@@ -15,21 +15,23 @@ public class alian : MonoBehaviour
    float speed = .01F;
 
    bool mouseClicked = false;
+
     
     void OnCollisionEnter (Collision collision) {
  
     if (collision.gameObject.name.Substring(0,5) == "alian" || collision.gameObject.name.Substring(0,6) == "pireta") {
-    Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
+        Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
         }
- 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        this.setNext(next);
+        try {
+            this.setNext(next);
+        } catch (UnassignedReferenceException e){
 
+        }
         gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
         if (Input.GetMouseButton(0) && !mouseClicked) {
@@ -69,7 +71,7 @@ public class alian : MonoBehaviour
     }
 
       public void kill_ball(GameObject g){
-        if (g.name.Substring(0,5) == "alian"){
+        if (g.name.Substring(0,5) == "alian" || g.name.Substring(0,6) == "pireta"){
             Destroy(g);
         }
     }
