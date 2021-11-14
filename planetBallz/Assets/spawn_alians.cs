@@ -43,7 +43,42 @@ public class spawn_alians : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("PirateSpawn4");
                 }
             }
-         }
+            else if (type.name.Substring(0,6) == "pireta")
+            {
+                System.Random rand = new Random();
+                double randValue = rand.NextDouble();
+
+                if (randValue < 0.1)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawn1");
+                }
+                else if (randValue < 0.19)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawn2");
+                }
+                else if (randValue < 0.28)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawn3");
+                }
+                else if (randValue < 0.37)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawn4");
+                }
+                else if (randValue < 0.38)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawnRare1");
+                }
+                else if (randValue < 0.39)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawnRare2");
+                }
+                else if (randValue < 0.40)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboySpawnRare3");
+                }
+
+            }
+        }
         
     }
 }
