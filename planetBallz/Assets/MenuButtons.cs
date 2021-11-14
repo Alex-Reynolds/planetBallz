@@ -8,8 +8,8 @@ public class MenuButtons : MonoBehaviour
     // Start is called before the first frame update
     public void StartGame()
     {
-        // load next scene (first scene)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // load next scene (first scene) (skip over game over screen)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     // quits game
@@ -19,5 +19,11 @@ public class MenuButtons : MonoBehaviour
         // so below debug tells you to make sure when it quits
         Debug.Log("QUIT");
         Application.Quit();
+    }
+
+    public void RestartGame()
+    {
+        // Go back to first level (Scene 3)
+        SceneManager.LoadScene(3);
     }
 }
