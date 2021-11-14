@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cowboy.unity
     guid: 3124c4e61d85e0340a6934bf82cf2eee
+  - enabled: 1
+    path: Assets/Scenes/pirate.unity
+    guid: 3df490c678737ae4cad4e11468c4a4f4
   m_configObjects: {}
