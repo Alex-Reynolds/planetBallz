@@ -261,6 +261,11 @@ PrefabInstance:
       objectReference: {fileID: 146744918}
     - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
         type: 3}
+      propertyPath: launchTime
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
+        type: 3}
       propertyPath: ballCreature
       value: 
       objectReference: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
@@ -353,6 +358,11 @@ PrefabInstance:
       objectReference: {fileID: 146744918}
     - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
         type: 3}
+      propertyPath: launchTime
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
+        type: 3}
       propertyPath: ballCreature
       value: 
       objectReference: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
@@ -437,6 +447,11 @@ PrefabInstance:
       propertyPath: first
       value: 
       objectReference: {fileID: 146744918}
+    - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
+        type: 3}
+      propertyPath: launchTime
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
         type: 3}
       propertyPath: ballCreature
@@ -615,6 +630,11 @@ PrefabInstance:
       propertyPath: first
       value: 
       objectReference: {fileID: 146744918}
+    - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
+        type: 3}
+      propertyPath: launchTime
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
         type: 3}
       propertyPath: ballCreature
@@ -800,6 +820,11 @@ PrefabInstance:
       objectReference: {fileID: 146744918}
     - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
         type: 3}
+      propertyPath: launchTime
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007278755892278182, guid: b8c128f6c07ba3a46aadff94275f5b48,
+        type: 3}
       propertyPath: ballCreature
       value: 
       objectReference: {fileID: 6194189278701308980, guid: 00cea662d8ffeb24890c41dd35aa7ef4,
@@ -963,6 +988,7 @@ MonoBehaviour:
   first: {fileID: 146744918}
   ballCreature: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
     type: 3}
+  launchTime: 1000
 --- !u!1 &1944992870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6007278755892278189, guid: b8c128f6c07ba3a46aadff94275f5b48,
@@ -985,6 +1011,7 @@ MonoBehaviour:
   first: {fileID: 146744918}
   ballCreature: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
     type: 3}
+  launchTime: 1000
 --- !u!1001 &5208748827526172342
 PrefabInstance:
   m_ObjectHideFlags: 0
