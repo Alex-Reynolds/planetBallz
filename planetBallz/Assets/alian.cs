@@ -74,12 +74,12 @@ public class alian : MonoBehaviour
       public void kill_ball(GameObject g){
         if (g.name.Substring(0,5) == "alian" || g.name.Substring(0,6) == "pireta"){
             Destroy(g);
+            FindObjectOfType<AudioManager>().Play("GeneralDeathSound");
             if (g.name.Substring(0, 5) == "alian")
             {
                 System.Random rand = new Random();
                 double randValue = rand.NextDouble();
 
-                FindObjectOfType<AudioManager>().Play("GeneralDeathSound");
                 if (randValue < 0.01)
                 {
                     FindObjectOfType<AudioManager>().Play("PirateDeathRare");
