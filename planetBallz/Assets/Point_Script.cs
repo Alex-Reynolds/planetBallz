@@ -18,7 +18,7 @@ public class Point_Script : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Substring(0,5) == "alian"){
+        if (other.gameObject.name.Substring(0,5) == "alian" || other.gameObject.name.Substring(0,6) == "pireta"){
             alian other_other = other.gameObject.GetComponent<alian>();
 
             if (other_other.next.Equals(gameObject)){
