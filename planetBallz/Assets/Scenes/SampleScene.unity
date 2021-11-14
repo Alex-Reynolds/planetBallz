@@ -1628,6 +1628,8 @@ MonoBehaviour:
   first: {fileID: 146744918}
   ballCreature: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
     type: 3}
+  launchTime: 1000
+  seed: 95638
 --- !u!1001 &1908297168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1724,6 +1726,8 @@ MonoBehaviour:
   first: {fileID: 146744918}
   ballCreature: {fileID: 1560971675782161228, guid: 775059382db98144d9f1c7144102ab01,
     type: 3}
+  launchTime: 1000
+  seed: 627
 --- !u!1 &1988613078
 GameObject:
   m_ObjectHideFlags: 0
