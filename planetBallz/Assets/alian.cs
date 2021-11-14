@@ -13,6 +13,8 @@ public class alian : MonoBehaviour
    float distZ;
 
    float speed = .01F;
+
+   bool mouseClicked = false;
     
     void OnCollisionEnter (Collision collision) {
  
@@ -30,7 +32,7 @@ public class alian : MonoBehaviour
 
         gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0) && !mouseClicked) {
   	        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
    	        RaycastHit hit;
    	        // Casts the ray and get the first game object hit
@@ -40,6 +42,11 @@ public class alian : MonoBehaviour
             } catch (NullReferenceException e) {
 
             }
+            mouseClicked = true;
+        }
+
+        if (!Input.GetMouseButton(0)){
+            mouseClicked = false;
         }
        
     }

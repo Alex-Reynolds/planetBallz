@@ -18,11 +18,12 @@ public class Point_Script : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log (other.gameObject.name.Substring(0,5));
         if (other.gameObject.name.Substring(0,5) == "alian"){
             alian other_other = other.gameObject.GetComponent<alian>();
 
-            other_other.setNext(getNext().gameObject);
+            if (other_other.next.Equals(gameObject)){
+                other_other.setNext(getNext().gameObject);
+            }
         }
     }
 }
