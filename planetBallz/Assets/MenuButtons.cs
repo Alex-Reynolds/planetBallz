@@ -23,7 +23,7 @@ public class MenuButtons : MonoBehaviour
 
     public void RestartGame()
     {
-        // Go back to first level (Scene 2)
-        SceneManager.LoadScene(2);
+        // Go back to first level (Scene 3)
+        SceneManager.LoadScene(3);
     }
 }
