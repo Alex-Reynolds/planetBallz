@@ -12,6 +12,11 @@ public class MenuButtons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
+    public void StartGameFromTutorial()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     // quits game
     public void QuitGame()
     {
@@ -26,4 +31,6 @@ public class MenuButtons : MonoBehaviour
         // Go back to first level (Scene 3)
         SceneManager.LoadScene(3);
     }
+
+
 }
