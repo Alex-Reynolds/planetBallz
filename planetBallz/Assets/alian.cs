@@ -17,6 +17,8 @@ public class alian : MonoBehaviour
 
    bool mouseClicked = false;
 
+   GameObject ballCreature;
+
     
     void OnCollisionEnter (Collision collision) {
  
@@ -30,10 +32,12 @@ public class alian : MonoBehaviour
     {
         try {
             this.setNext(next);
+             gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
+        ballCreature.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed));
+
         } catch (UnassignedReferenceException e){
 
         }
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x + (distX * speed),gameObject.transform.position.y + (distY * speed), gameObject.transform.position.z + (distZ * speed)); 
        
         if (Input.GetMouseButton(0) && !mouseClicked) {
   	        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -71,9 +75,15 @@ public class alian : MonoBehaviour
 
     }
 
+      public void setBallCreature(GameObject arr){
+          ballCreature = arr;
+      }
+
       public void kill_ball(GameObject g){
         if (g.name.Substring(0,5) == "alian" || g.name.Substring(0,6) == "pireta"){
             Destroy(g);
+           // Destroy (ballCreature);
+            
             FindObjectOfType<AudioManager>().Play("GeneralDeathSound");
             if (g.name.Substring(0, 5) == "alian")
             {

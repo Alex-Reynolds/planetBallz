@@ -9,6 +9,7 @@ public class spawn_alians : MonoBehaviour
     int timer = 0;
     public GameObject type;
     public GameObject first;
+    public GameObject ballCreature;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +21,8 @@ public class spawn_alians : MonoBehaviour
             GameObject meme = Instantiate(type, gameObject.transform.position, Quaternion.identity);
             alian new_alian = meme.GetComponent<alian>();
             new_alian.setNext(first);
+            GameObject cowboy = Instantiate(ballCreature, gameObject.transform.position, Quaternion.identity);
+            new_alian.setBallCreature(cowboy);
            
             if (type.name.Substring(0, 5) == "alian")
             {
