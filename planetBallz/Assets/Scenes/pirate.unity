@@ -3513,7 +3513,7 @@ RectTransform:
   m_Children:
   - {fileID: 1314085880}
   m_Father: {fileID: 0}
-  m_RootOrder: 65
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6435,38 +6435,18 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
+  - name: CowboyDeath1
+    clip: {fileID: 8300000, guid: d68af1d1fadd77641b4ca67adb2c95ca, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
+  - name: CowboyDeath2
+    clip: {fileID: 8300000, guid: 276ce351e4687b7438d69f7059c92056, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
-    volume: 0.5
-    pitch: 1
-    source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
-    volume: 0.5
-    pitch: 1
-    source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
-    volume: 0.5
-    pitch: 1
-    source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
-    volume: 0.5
-    pitch: 1
-    source: {fileID: 0}
-  - name: PirateSpawn4
-    clip: {fileID: 8300000, guid: c823062f00e1cf54993e9962c8fd5496, type: 3}
+  - name: CowboyDeath3
+    clip: {fileID: 8300000, guid: a2cc46a0cfac8f446b56cc8dcc74614e, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}

@@ -93,6 +93,24 @@ public class alian : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("PirateDeath2");
                 }
             }
+            else if (g.name.Substring(0, 6) == "pireta")
+            {
+                System.Random rand = new Random();
+                double randValue = rand.NextDouble();
+
+                if (randValue < 0.1)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboyDeath1");
+                }
+                else if (randValue < 0.2)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboyDeath2");
+                }
+                else if (randValue < 0.3)
+                {
+                    FindObjectOfType<AudioManager>().Play("CowboyDeath3");
+                }
+            }
 
         }
     }
