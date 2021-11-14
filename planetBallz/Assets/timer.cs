@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class timer : MonoBehaviour
+public class timer_script : MonoBehaviour
 {
 
   

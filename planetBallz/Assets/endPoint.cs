@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class endPoint : Point_Script
 {   
-   static int lives = 3;
+   public static int lives = 10;
 
     void OnTriggerEnter(Collider other)
     {
