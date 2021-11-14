@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutscene12.unity
     guid: 547bb040e202ee24aa7b07b63350d8b1
+  - enabled: 1
+    path: Assets/Scenes/finalscreen.unity
+    guid: 7943d641ecbf7c347b61300e7401d5e0
   m_configObjects: {}
